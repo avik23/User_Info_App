@@ -1,0 +1,67 @@
+
+
+@mixin position($positionName) {
+    position: $positionName;
+ }
+ @mixin backgroundColor($backgroundColor) {
+   background-color: $backgroundColor;
+ }
+ @mixin width($widthSize) {
+     width: $widthSize;
+  }
+  @mixin padding($paddingSize) {
+     padding: $paddingSize;
+  }
+  
+  @mixin fontSize($fontSize) {
+      font-size: $fontSize;
+      
+  }
+
+
+.userpersonalInfo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5vh;
+  
+  }
+  
+  .usernameText{
+    padding-right:"20vh";
+  }
+  .errorText{
+    text-align: center;
+    position: relative;
+    left: 80vh;
+    top: 40vh;
+  }
+  
+  .error_color{
+    color: red;
+  }
+
+  .homeContainer{
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+
+  .genericTextFont{
+    @include fontSize(1vw);
+    font-weight: bold;
+  }
+  .imageError{
+       @include position(relative);
+       @include width(100%);
+  }
+  .errorImageConatiner{
+    @include position(absolute); 
+    text-align: center;
+    @include width(100%);
+    top:108px;
+  }
+
+  .homeBody{
+    padding: 2vh;
+  }
+
+  
