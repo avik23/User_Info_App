@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Styles from "../../styles/index.module.scss";
-import errorLogo from "../../assets/error.png";
 import { IMAGE_NOT_FOUND, INVALID_IMAGE_NAME } from "../../constant/Constant";
 import { ImageMapper } from "../Error/ImageMapper";
 
