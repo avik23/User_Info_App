@@ -42,12 +42,13 @@ function Home() {
 
 
     }
-
+    //Getter function for Local Storage
     const getUserDataFrmLocalStrg = () => {
         const usersData = JSON.parse(localStorage.getItem(USERS_DATA));
         return usersData;
     }
 
+    //Setter Function for Local Storage
     const setUserDatatoLocalStrg = (usersData) => {
         localStorage.setItem(USERS_DATA, JSON.stringify(usersData));
     }
@@ -125,7 +126,6 @@ function Home() {
         }
 
     }
-    // style={{ display: "flex", flexWrap: "wrap" }}
     return (
         <div className={styles.homeContainer}>
             {

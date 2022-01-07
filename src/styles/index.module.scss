@@ -1,5 +1,5 @@
 
-
+//Functions MIXINS
 @mixin position($positionName) {
     position: $positionName;
  }
@@ -22,16 +22,16 @@
 .userpersonalInfo{
     display: flex;
     flex-wrap: wrap;
-    padding: 0.5vh;
+    @include padding(0.5vh);
   
   }
   
   .usernameText{
-    padding-right:"20vh";
+    padding-right:20vh;
   }
   .errorText{
     text-align: center;
-    position: relative;
+    @include position(relative);
     left: 80vh;
     top: 40vh;
   }
@@ -50,8 +50,8 @@
     font-weight: bold;
   }
   .imageError{
-       @include position(relative);
-       @include width(100%);
+    @include position(relative);
+    @include width(100%);
   }
   .errorImageConatiner{
     @include position(absolute); 
@@ -61,7 +61,7 @@
   }
 
   .homeBody{
-    padding: 2vh;
+    @include padding(2vh);
   }
 
   
